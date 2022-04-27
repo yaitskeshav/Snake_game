@@ -1,5 +1,4 @@
 import pickle
-from tkinter.tix import PopupMenu
 import pygame
 import random
 import os
@@ -24,7 +23,7 @@ pygame.init()
 pygame.font.init()
 pygame.mixer.init()
 gameDisplay = pygame.display.set_mode((display_width, display_height))
-pygame.display.set_caption('SUPER SNAKE')
+pygame.display.set_caption('SNAKE GAME')
 clock = pygame.time.Clock() 
 
 
@@ -98,7 +97,7 @@ STONEDESTROY = pygame.mixer.Sound("STONEDESTROY.wav")
 
 pygame.mixer.music.load('music.mp3')
 pygame.mixer.music.set_volume(0.2)
-
+                    
 # SILNIK GRY
 
 class stones:
